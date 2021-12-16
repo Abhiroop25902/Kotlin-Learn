@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cost_of_service">Cost of Service</string>
+    <string name="how_was_the_service">How was the service?</string>
+    <string name="round_up_tip">Round Up Tip?</string>
+</resources>
