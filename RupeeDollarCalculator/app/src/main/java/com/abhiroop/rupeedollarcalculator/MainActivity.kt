@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        getOneDollarValueByAPICall()
+        getOneDollarValueByAPICall() //call an currency API url and find realtime value of one dollar in rupees
         setContentView(binding.root)
 
         binding.calculateButton.setOnClickListener{ convert() }
@@ -33,9 +33,8 @@ class MainActivity : AppCompatActivity() {
         val stringRequest = StringRequest(
             Request.Method.GET, url,
             { response ->
-                //parse the response using Gson
-                binding.APIRequest.text = response
-                extractCurrencyValueFromResponse()
+                // set the oneDollarValue by reading the response
+                extractCurrencyValueFromResponse(response)
             },
             { print("error") }
         )
@@ -45,10 +44,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun extractCurrencyValueFromResponse() {
-        val response = binding.APIRequest.text.toString()
-        binding.APIRequest.text = ""
-
+    private fun extractCurrencyValueFromResponse(response: String) {
+        // the JSON format
         data class APIModel(
             val success: Boolean,
             val message: String,
@@ -57,9 +54,9 @@ class MainActivity : AppCompatActivity() {
             val price: Int,
             val converted_value: Double
         )
-        val gson = Gson()
-        val apiCall:APIModel = gson.fromJson(response, APIModel::class.java)
-        oneDollarValue = apiCall.converted_value
+        oneDollarValue = Gson()                         //the JSON Parser
+            .fromJson(response, APIModel::class.java)   //parser parsed the response string to an object of APIModel
+            .converted_value                            //select the converted_value of the APIModel
     }
 
     private fun convert(){
