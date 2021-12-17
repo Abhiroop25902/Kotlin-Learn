@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/editText_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_amount"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enter_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="Value"
+        android:hint="@string/enter_value"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_heading" />
+
+    <RadioGroup
+        android:id="@+id/currency_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enter_amount"
+        android:checkedButton="@id/to_rupee">
+
+
+        <RadioButton
+            android:id="@+id/to_rupee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_rupee" />
+
+        <RadioButton
+            android:id="@+id/to_dollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_dollar" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculate_button"
+        tools:text="Converted Result = $ 100" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/currency_select"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/calculate"/>
+
+    <TextView
+        android:id="@+id/APIRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text=""/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

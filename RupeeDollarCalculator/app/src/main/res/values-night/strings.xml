@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="calculate">Calculate</string>
+</resources>

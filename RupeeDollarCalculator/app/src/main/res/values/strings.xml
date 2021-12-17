@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RupeeDollarCalculator</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="to_rupee">Dollar To Rupee</string>
+    <string name="to_dollar">Rupees To Dollar</string>
+    <string name="calculate">Calculate</string>
+    <string name="result">Converted Result = %s </string>
+    <string name="defaultAPIString">{"success":true,"message":"","source":"","destination":"","price":0,"converted_value":70.0}</string>
+</resources>
