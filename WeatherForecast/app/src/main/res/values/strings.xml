@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Weather Forecast</string>
+    <string name="Celsius">C</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="find_weather">Find Weather</string>
+    <string name="url">https://api.weatherapi.com/v1/current.json?key=ac47448b620f4482868174026212712&amp;q=%s</string>
+    <string name="weather_format">%d°</string>
+</resources>
