@@ -4,3 +4,6 @@
 [submodule "android-basics-kotlin-words-app"]
 	path = android-basics-kotlin-words-app
 	url = https://github.com/Abhiroop25902/android-basics-kotlin-words-app
+[submodule "android-basics-kotlin-unscramble-app"]
+	path = android-basics-kotlin-unscramble-app
+	url = https://github.com/Abhiroop25902/android-basics-kotlin-unscramble-app
