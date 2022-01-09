@@ -7,3 +7,6 @@
 [submodule "android-basics-kotlin-unscramble-app"]
 	path = android-basics-kotlin-unscramble-app
 	url = https://github.com/Abhiroop25902/android-basics-kotlin-unscramble-app
+[submodule "android-basics-kotlin-cupcake-app"]
+	path = android-basics-kotlin-cupcake-app
+	url = https://github.com/Abhiroop25902/android-basics-kotlin-cupcake-app
