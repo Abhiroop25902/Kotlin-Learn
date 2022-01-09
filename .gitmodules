@@ -13,3 +13,6 @@
 [submodule "android-basics-kotlin-mars-photos-app"]
 	path = android-basics-kotlin-mars-photos-app
 	url = https://github.com/Abhiroop25902/android-basics-kotlin-mars-photos-app
+[submodule "android-basics-kotlin-sql-basics-app"]
+	path = android-basics-kotlin-sql-basics-app
+	url = https://github.com/Abhiroop25902/android-basics-kotlin-sql-basics-app
