@@ -10,3 +10,6 @@
 [submodule "android-basics-kotlin-cupcake-app"]
 	path = android-basics-kotlin-cupcake-app
 	url = https://github.com/Abhiroop25902/android-basics-kotlin-cupcake-app
+[submodule "android-basics-kotlin-mars-photos-app"]
+	path = android-basics-kotlin-mars-photos-app
+	url = https://github.com/Abhiroop25902/android-basics-kotlin-mars-photos-app
