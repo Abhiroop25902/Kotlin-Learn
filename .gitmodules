@@ -16,3 +16,6 @@
 [submodule "android-basics-kotlin-sql-basics-app"]
 	path = android-basics-kotlin-sql-basics-app
 	url = https://github.com/Abhiroop25902/android-basics-kotlin-sql-basics-app
+[submodule "android-basics-kotlin-bus-schedule-app"]
+	path = android-basics-kotlin-bus-schedule-app
+	url = https://github.com/Abhiroop25902/android-basics-kotlin-bus-schedule-app
